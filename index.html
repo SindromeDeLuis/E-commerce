@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="@SindromeDeLuis">
+    <link rel="icon" href="img/favicon.ico">
+    <title>E-commerce</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="vendor/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="nav-icon">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="logo">
+                <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+            </div>
+            <div class="searchbar">
+                <form action="#">
+                    <input type="text" placeholder="Search products in -title-" name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="pages/shop.html">Shop</a></li>
+                    <li><a href="pages/account.html">Account</a></li>
+                    <div class="nav-extra">
+                        <li><a href="#">My Wishlist</a></li>
+                        <li><a href="pages/cart.html">View Cart</a></li>
+                        <li><a href="#">Track My Order</a></li>
+                        <li><a href="#">Help</a></li>
+                    </div>
+                </ul>
+                <a href="pages/cart.html" class="nav-cart"><i class="fa-solid fa-cart-shopping"></i></a>
+            </nav>
+        </header>
+        <div class="banner">
+            <div class="banner-text">
+                <h4>Trade-in-offer</h4>
+                <h2>Super value deals</h2>
+                <h2 class="h2">On all products</h2>
+                <p>Save more with coupons & up to 30% off!</p>
+                <button type="button" class="black">Shop Now</button>
+            </div>
+        </div>
+
+        <main>
+            <section class="products section-p1" id="products1">
+                <h2>Featured Products</h2>
+                <p>Summer Collection New Morder Design</p>
+                <button class="arrow a-left"><i class="fa-solid fa-angle-left"></i></button>
+                <button class="arrow a-right"><i class="fa-solid fa-angle-right"></i></button>
+                <div class="products-container" id="products-container">
+                    <!-- product-template -->
+                </div>
+            </section>
+            
+            <section class="products section-p1" id="products2">
+                <h2>New Arrivals</h2>
+                <p>Casual Collection New Morder Design</p>
+                <button class="arrow a-left"><i class="fa-solid fa-angle-left"></i></button>
+                <button class="arrow a-right"><i class="fa-solid fa-angle-right"></i></button>
+                <div class="products-container" id="products-container">
+                    <!-- product-template -->
+                </div>
+            </section>
+
+            <template id="product-template">
+                <div class="product">
+                    <img id="img" src="" alt="">
+                    <div class="description">
+                        <span>brand</span>
+                        <h5 id="name">Name · Category</h5>
+                        <div class="rating"></div>
+                        <h4>$</h4>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-cart-arrow-down cart"></i></a>
+                </div>
+            </template>
+
+            <section class="sm-banner section-p1">
+                <div class="banner-box">
+                    <h4>Crazy deals</h4>
+                    <h2>Buy 1 & get 1 free</h2>
+                    <span>The best classic dress is on sale at -title-</span>
+                    <button class="white">See more</button>
+                </div>
+                <div class="banner-box">
+                    <h4>Spring / Summer</h4>
+                    <h2>Upcomming season</h2>
+                    <span>The best classic dress is on sale at -title-</span>
+                    <button class="white">Collection</button>
+                </div>
+            </section>
+
+            <section class="banner3">
+                <div class="banner-box">
+                    <h2>SEASONAL SALE</h2>
+                    <h3>Winter Collection 50% off</h3>
+                </div>
+                <div class="banner-box">
+                    <h2>NEW FOOTWEAR COLLECTION</h2>
+                    <h3>Spring / Summer 2023</h3>
+                </div>
+                <div class="banner-box">
+                    <h2>T-SHIRTS</h2>
+                    <h3>New Trendy Prints</h3>
+                </div>
+            </section>
+
+            <section class="explore-banner section-m1">
+                <h4>Repair Services</h4>
+                <h2>Up to <span>70% off</span> - all T-Shirts & Accessories</h2>
+                <button class="white">Explore More</button>
+            </section>
+
+            <section class="feature section-p1" id="feature">
+                <!-- feature-template -->
+            </section>
+            <template id="feature-template">
+                <div class="feature-box">
+                    <img id="img" src="" alt="">
+                    <h6 id="name">Name</h6>
+                </div>
+            </template>
+
+            <section class="newsletter section-p1">
+                <div class="text">
+                    <h4>Join our newsletter</h4>
+                    <p>Get e-mail updates about our latest products and special offers</p>
+                </div>
+                <div class="form-container">
+                    <form action="" method="post" enctype="text/plain">
+                        <input type="email" name="email" id="email" placeholder="Your e-mail address" required>
+                        <button type="submit" class="general">Suscribe</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="info-container">
+                <div class="info">
+                    <h4>Contact</h4>
+                    <p><strong>Address: </strong>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                    <p><strong>Phone: </strong>+1 222 333 4567</p>
+                    <p><strong>Hours: </strong>09:00 - 17:00, Mon - Sat</p>
+                    <div class="social">
+                        <h4>Follow us</h4>
+                        <div class="icon">
+                            <a href="http://facebook.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="http://twitter.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="http://instagram.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="http://tiktok.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="info">
+                    <h4>About</h4>
+                    <a href="#">About Us</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Delivery Information</a>
+                    <a href="#">Privacy Police</a>
+                    <a href="#">Terms & Conditions</a>
+                </div>
+                <div class="info">
+                    <h4>My Account</h4>
+                    <a href="pages/account.html">Account</a>
+                    <a href="#">My Wishlist</a>
+                    <a href="pages/cart.html">View Cart</a>
+                    <a href="#">Track My Order</a>
+                    <a href="#">Help</a>
+                </div>
+                <div class="info">
+                    <h4>Install App</h4>
+                    <p>From App Store or Google Play</p>
+                    <div class="store">
+                        <a href="#" target="_blank" rel="noopener noreferrer"><img src="img/home/app.jpg" alt=""></a>
+                        <a href="#" target="_blank" rel="noopener noreferrer"><img src="img/home/play.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&#169; 2023 <a href="https://sindromedeluis.github.io/" target="_blank" rel="noopener noreferrer">Luis A Sandoval @SindromeDeLuis</a></p>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="js/menu.js"></script>
+<script src="js/home/products.js"></script>
+<script src="js/home/feature.js"></script>
+</html>
