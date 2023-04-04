@@ -146,7 +146,7 @@ function appendProducts(array) {
     array.forEach(product => {
         const clone = productTemplate.content.firstElementChild.cloneNode(true)
     
-        clone.querySelector("#img").src = "img/products/"+product.img
+        clone.querySelector("#img").src += "img/products/"+product.img
         clone.querySelector("span").textContent = product.brand
         clone.querySelector("#name").innerHTML = product.name +"<p> · "+product.category+"</p>"
         clone.querySelector(".rating").innerHTML = "<i class='fas fa-star'></i>".repeat(product.rating)
