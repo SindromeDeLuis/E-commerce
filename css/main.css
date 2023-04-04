@@ -234,21 +234,10 @@ button:hover {
 
 /* Medium devices (tablets, 768px and down) */
 @media screen and (max-width:768px) {
-    .section-p1 {
-        padding: 40px 5vw;
+    .header {
+        height: 8vh;
+        padding: 15px 6vw;
     }
-
-    .footer {
-        padding: 40px;
-    }
-}
-
-/* Small devices (phones, 480px and down) */
-@media screen and (max-width:480px) {
-    .section-p1 {
-        padding: 20px;
-    }
-
     .header .logo {
         display: none;
     }
@@ -296,6 +285,21 @@ button:hover {
         display: block;
         font-size: 20px;
         cursor: pointer;
+    }
+    
+    .section-p1 {
+        padding: 40px 5vw;
+    }
+
+    .footer {
+        padding: 40px;
+    }
+}
+
+/* Small devices (phones, 480px and down) */
+@media screen and (max-width:480px) {
+    .section-p1 {
+        padding: 20px;
     }
     
     .footer .info-container {

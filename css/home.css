@@ -336,6 +336,7 @@
 @media screen and (max-width:768px) {
     .banner {
         background-position: top 30% right 30%;
+        height: 92vh;
         padding: 0 40px;
     }
         .banner .banner-text {
